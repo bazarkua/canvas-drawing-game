@@ -1,0 +1,300 @@
+h1 {
+    font-family: "Roboto Slab";
+  font-size: 80px;
+  color: black;
+  text-align: center;
+  font-weight: normal;
+  font-style: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #b3abab;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+  position: absolute;
+  margin-left: 950px;
+}
+
+h1:hover
+{
+    opacity: 50%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    background:#F3F3F3;
+    font-family:'Roboto', 'Helvetica', sans-serif;
+}
+
+main {
+    position:fixed;
+    top:0;
+    left:50;
+    bottom:0;
+    width:50px;
+    background:#b3abab;
+}
+    
+main section {
+    display:block;
+    margin:70px auto;
+    width:30px;
+    height:30px;
+    border-radius: 70%;
+}
+
+/*********** color black **************/
+main #colors { 
+    background:#171717;
+    border:1px solid #F3F3F3;
+    position:relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 100px;
+    transition: 0.5s;
+    cursor:pointer;
+    border-radius: 50%;
+}
+#colors:hover{
+    width: 40px;
+    height: 40px;
+}
+
+main #colors .color-picker {
+    display:none;
+    width:200px;
+    height:50px;
+    position:absolute;
+    top:50%;
+    left:30px;
+}
+    
+
+
+/*********** color red **************/
+main #colors-second {
+    background: red;
+    border:1px solid #F3F3F3;
+    position:relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 100px;
+    transition: 0.5s;
+    cursor:pointer;
+    border-radius: 50%;
+}
+#colors-second:hover{
+    width: 40px;
+    height: 40px;
+}
+
+main #colors-second .color-picker-second {
+    display:none;
+    width:200px;
+    height:30px;
+    position:absolute;
+    top:50%;
+    left:30px;
+
+}
+
+/*********** color blue **************/
+main #colors-third {
+    background: blue;
+    border:1px solid #F3F3F3;
+    position:relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 100px;
+    transition: 0.5s;
+    cursor:pointer;
+    border-radius: 50%;
+}
+#colors-third:hover{
+    width: 40px;
+    height: 40px;
+}
+
+main #colors-third .color-picker-third {
+    display:none;
+    width:200px;
+    height:30px;
+    position:absolute;
+    top:50%;
+    left:30px;
+}
+
+/*********** color yellow **************/
+main #colors-fourth {
+    background: yellow;
+    border:1px solid #F3F3F3;
+    position:relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 100px;
+    transition: 0.5s;
+    cursor:pointer;
+    border-radius: 50%;
+}
+#colors-fourth:hover{
+    width: 40px;
+    height: 40px;
+}
+
+main #colors-fourth .color-picker-fourth {
+    display:none;
+    width:200px;
+    height:30px;
+    position:absolute;
+    top:50%;
+    left:30px;
+}
+
+/*********** color green **************/
+main #colors-fifth {
+    background: green;
+    border:1px solid #F3F3F3;
+    position:relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 100px;
+    transition: 0.5s;
+    cursor:pointer;
+    border-radius: 50%;
+}
+#colors-fifth:hover{
+    width: 40px;
+    height: 40px;
+}
+
+main #colors-fifth .color-picker-fifth {
+    display:none;
+    width:200px;
+    height:30px;
+    position:absolute;
+    top:50%;
+    left:30px;
+}
+
+/*********** drawing thickness ***********/
+main .thickness {
+    position:relative;
+    background-color:#F3F3F3;
+}
+    
+main .thickness::after {
+    content:'';
+    position:absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    width:50%;
+    height:50%;
+    border-radius:50%;
+    background:#171717;
+}
+
+main .thickness .stroke-weight {
+    display:none;
+    position:absolute;
+    width:auto;
+    height:25px;
+    left:30px;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+
+main .thickness .stroke-weight:focus {
+    display:block;
+}
+
+main .thickness:hover .stroke-weight {
+    display:block;
+}
+
+/********** clear canvas button ******/
+main .clear {
+    display:block;
+    width:30px;
+    height:30px;
+    margin:0 auto;
+    color:#171717;
+    font-size:20px;
+    font-weight:900;
+    background-color:#FFCE00;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+.generate-container {
+    display: block;
+    background-color:#b3abab;
+    position: fixed;
+    right:0px;
+    height: 100%;
+    top:0;
+    bottom:0;
+}
+
+.generate-word-container {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    align-items: right;
+    bottom:60px;
+}
+
+.text-holder-title {
+    font-family: "Roboto Slab", serif;
+    font-size: 50px;
+    color: #ffffff;
+    margin-left: 10px;
+    
+}
+
+.text-holder {
+    padding: 30px;
+    position: relative;
+    top: 200px;
+
+}
+
+.btn {
+      border-radius: 20px;
+      position: relative;
+      top: 50px;
+      right: 200px;
+      width: 100px;
+      height: 40px;
+      transition: 0.3s;
+      cursor: pointer;
+      left: 70px;
+      font-family:"Roboto Slab", serif;
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+.btn:hover {
+    width: 110px;
+    height: 50px;
+    background-color: #fff7b0;
+}
+
+#new-word-container {
+      font-family: "Roboto Slab", serif;
+      font-weight: bold;
+      font-size: 45px;
+      margin-left: 70px;
+}

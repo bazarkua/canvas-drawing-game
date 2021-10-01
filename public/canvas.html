@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel = "stylesheet">
+  <title>Guess The Drawing</title>
+  <link rel="stylesheet" href="main.min.css">
+  <script src = "main.js" charset= "utf-8" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <div class = "site-title-container">
+    <h1 class= "site-title">Lets Draw!</h1> 
+  </div>
+  </header>
+  <canvas></canvas>
+  <main>
+    
+      
+      <button  id ="colors" class="color-picker" data-color = "black"></button>
+    
+    
+      <button type="button" id ="colors-second" class="color-picker-second" data-color = "red"></button>
+    
+   
+      <button type="button" id ="colors-third"class="color-picker-third" data-color = "blue"></button>
+
+      <button type="button" id ="colors-fourth" class="color-picker-fourth" data-color = "yellow"></button>
+    
+   
+      <button type="button" id ="colors-fifth"class="color-picker-fifth" data-color = "green"></button>
+    
+    
+    
+    <section class="thickness">
+      <input type="number" class="stroke-weight" value="3" />
+    
+    </section>
+    
+    <button class="clear">X</button>
+
+    <aside class="generate-container">
+      <div class="generate-word-container">
+          <div class="chat-popup" id="myForm">
+            
+              <label for="msg"><b class="text-holder-title">Draw this word!</b></label>
+              
+              <div class="text-holder">
+          
+              <button type="submit" class="btn">Generate</button>
+              
+              </div>
+            </form>
+          </div>
+        </div>
+        <p id="new-word-container"> </p>
+    </aside>
+  </main>
+</body>
+</html>

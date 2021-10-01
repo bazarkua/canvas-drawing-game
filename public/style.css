@@ -1,0 +1,183 @@
+.site-title {
+  font-family: "Roboto Slab";
+  font-size: 80px;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  font-style: none;
+  border: none;
+  border-radius: 30px;
+  background-color: sandybrown;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+
+.site-title:hover{
+  border-radius: 53px;
+  font-size: 90px;
+  background-color: #f4511e;
+  color: white;
+}
+
+.homepage-image-container img {
+  max-height: 500px;
+  max-width: 400px;
+  border: 5px solid black;
+  border-radius: 3px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.homepage-image-container img:hover {
+  max-height: 600px;
+  max-width: 600px;
+}
+
+.homepage-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: url("homepagebackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#play-game {
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 35px;
+  font-family: "Roboto Slab";
+  font-weight: bolder;
+  color: #fff;
+  border: black;
+  background-color: sandybrown;
+  margin: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.how-to-play-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#play-game:hover{
+  border-radius: 53px;
+  font-size: 55px;
+  background-color: #f4511e;
+  color: white;
+}
+
+.play-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+#instruction-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#instruction-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
+.hidden {
+  display: none;
+}
+
+.instruction-dialog {
+  width: auto;
+  max-width: 600px;
+  min-width: 350px;
+  min-height: 300px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.instruction-header {
+  padding: 10px 20px;
+}
+
+.instruction-header h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+#instruction-close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.instruction-body {
+  padding: 20px;
+}
+
+#how-to-play-button {
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 35px;
+  font-family: "Roboto Slab";
+  font-weight: bolder;
+  color: #fff;
+  border: black;
+  background-color: sandybrown;
+  margin: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#how-to-play-button:hover {
+  border-radius: 53px;
+  font-size: 55px;
+  background-color: #f4511e;
+  color: white;
+}
+
+.instruction-dialog {
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+  top: 300px;
+  width: 1000px;
+  height: 400px;
+}
+
+.how-to-play-button-instruction {
+  position: relative;
+  left: 165px;
+}
+
+.error-container {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-size: 70px;
+}
